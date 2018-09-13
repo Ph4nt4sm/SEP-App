@@ -15,4 +15,15 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <Button
+        android:id="@+id/testing"
+        android:layout_width="200px"
+        android:layout_height="100px"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="139dp"
+        android:onClick="GoTo"
+        android:text="Test Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 </android.support.constraint.ConstraintLayout>
