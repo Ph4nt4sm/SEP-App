@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SEP-Project</string>
+    <string name="title_activity_login_page">LoginPage</string>
+    <string name="button_1">Button 1</string>
+</resources>
