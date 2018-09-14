@@ -19,6 +19,10 @@
         <activity
             android:name=".LoginPage"
             android:label="@string/title_activity_login_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegisterPage"
+            android:label="@string/title_activity_register_page"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
