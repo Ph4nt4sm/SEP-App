@@ -48,6 +48,7 @@
         android:layout_marginEnd="92dp"
         android:layout_marginTop="28dp"
         android:text="New User"
+        android:onClick="GoToRegister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Password" />
 
