@@ -27,7 +27,7 @@ public class RegisterPage extends AppCompatActivity {
         });
     }
     public void RegisterUser (View v){
-        Intent intent = new Intent( this, MainPage.class);
+        Intent intent = new Intent( this, HomePage.class);
         startActivity(intent);
     }
 

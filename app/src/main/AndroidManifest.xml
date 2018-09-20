@@ -23,6 +23,10 @@
         <activity
             android:name=".RegisterPage"
             android:label="@string/title_activity_register_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HomePage"
+            android:label="@string/title_activity_home_page"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
