@@ -27,6 +27,10 @@
         <activity
             android:name=".HomePage"
             android:label="@string/title_activity_home_page"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RecoverUserDetails"
+            android:label="@string/title_activity_recover_user_details"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
