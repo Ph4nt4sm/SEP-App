@@ -31,20 +31,19 @@ public class LoginPage extends AppCompatActivity {
 
 }
     EditText username = (EditText)findViewById(R.id.username);
-    EditText password = (EditText)findViewById(R.id.PassWord);
+    EditText password = (EditText)findViewById(R.id.Password);
+
     public void login(View view) {
         if(username.getText().toString().equals("admin") && password.getText().toString().equals("admin")){
 
             //correct password
-
+            Intent intent = new Intent( this, HomePage.class);
+            startActivity(intent);
         }else{
             //wrong password
         }
     }
-    public void login (View v){
-        Intent intent = new Intent( this, HomePage.class);
-        startActivity(intent);
-    }
+
     public void GoToRegister (View v){
         Intent intent = new Intent( this, RegisterPage.class);
         startActivity(intent);
