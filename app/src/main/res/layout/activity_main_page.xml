@@ -7,6 +7,7 @@
     tools:context=".MainPage">
 
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -25,5 +26,13 @@
         android:text="Test Login"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/testText"
+        android:layout_width="331dp"
+        android:layout_height="215dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="266dp" />
 
 </android.support.constraint.ConstraintLayout>
