@@ -49,33 +49,8 @@ public class RegisterPage extends AppCompatActivity {
     public void login(View view) {
         if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
             //correct password
-        } else {
-            //wrong password
-            Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
-            username.setVisibility(View.VISIBLE);
-            username.setBackgroundColor(Color.RED);
-            int counter = 3;
-            counter--;
-            username.setText(Integer.toString(counter));
 
-            if(counter==0){
-                //disables the button, sets timer to 60 seconds before the button reactivates
-                new CountDownTimer(60000, 1000) {
-                    @Override
-                    public void onTick(long l) {
-                        Toast.makeText(getApplicationContext(), "Try again in 60 seconds",Toast.LENGTH_SHORT).show();
-                        username.setVisibility(View.VISIBLE);
-                        username.setBackgroundColor(Color.RED);
-                        b1.setEnabled(false);
-                    }
-
-                    public void onFinish() {
-                        Toast.makeText(getApplicationContext(), "Done", Toast.LENGTH_SHORT).show();
-                        b1.setEnabled(true);
-                    }
-                }.start();
-            }
+            Toast.makeText(getApplicationContext(), "New User Registered",Toast.LENGTH_SHORT).show();
         }
     }
-
 }
