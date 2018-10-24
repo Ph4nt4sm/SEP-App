@@ -1,5 +1,6 @@
 package sep.sep_project;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.CountDownTimer;
@@ -35,9 +36,15 @@ public class LoginPage extends AppCompatActivity {
     EditText password = (EditText) findViewById(R.id.Password);
     Button b1 = (Button)findViewById(R.id.login);
 
+    //Checks the Login in correct or not
     public void login(View view) {
         if (username.getText().toString().equals("admin") && password.getText().toString().equals("admin")) {
             //correct password
+            Toast.makeText(getApplicationContext(), "Success",Toast.LENGTH_SHORT).show();
+
+            //Goes to the HomePage
+            Intent intent = new Intent(this, HomePage.class);
+            startActivity(intent);
         } else {
             //wrong password
             Toast.makeText(getApplicationContext(), "Wrong Credentials",Toast.LENGTH_SHORT).show();
@@ -48,16 +55,18 @@ public class LoginPage extends AppCompatActivity {
             username.setText(Integer.toString(counter));
 
             if(counter==0){
-                //disables the button, sets timer to 60 seconds before the button reactivates
-                new CountDownTimer(60000, 1000) {
+                //disables the button, sets timer to 30 seconds before the button reactivates
+                new CountDownTimer(30000, 1000) {
                     @Override
                     public void onTick(long l) {
-                        Toast.makeText(getApplicationContext(), "Try again in 60 seconds",Toast.LENGTH_SHORT).show();
+                        //Timer is set to 30 seconds
+                        Toast.makeText(getApplicationContext(), "Try again in 30 seconds",Toast.LENGTH_SHORT).show();
                         username.setVisibility(View.VISIBLE);
                         username.setBackgroundColor(Color.RED);
                         b1.setEnabled(false);
                     }
 
+                    //Timer Finishes
                     public void onFinish() {
                         Toast.makeText(getApplicationContext(), "Done", Toast.LENGTH_SHORT).show();
                         b1.setEnabled(true);
@@ -65,5 +74,17 @@ public class LoginPage extends AppCompatActivity {
                 }.start();
             }
         }
+    }
+
+    //Redirect to Register Page
+    public void GoToRegister(View view){
+        Intent intent = new Intent(this, RegisterPage.class);
+        startActivity(intent);
+    }
+
+    //Redirect to the Recovery Page
+    public void GoToRecover(View view){
+        Intent intent = new Intent(this, RecoverUserDetails.class);
+        startActivity(intent);
     }
 }

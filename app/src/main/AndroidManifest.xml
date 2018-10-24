@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="sep.sep_project">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -31,6 +33,10 @@
         <activity
             android:name=".RecoverUserDetails"
             android:label="@string/title_activity_recover_user_details"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SecurityQPage"
+            android:label="@string/title_activity_security_qpage"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
