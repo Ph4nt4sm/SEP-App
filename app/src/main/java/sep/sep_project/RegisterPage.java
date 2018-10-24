@@ -52,7 +52,7 @@ public class RegisterPage extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "New User Registered",Toast.LENGTH_SHORT).show();
 
             //Redirects to the HomePage
-            Intent intent = new Intent(this, SecurityQPage.class);
+            Intent intent = new Intent(this, HomePage.class);
             startActivity(intent);
         }
     }

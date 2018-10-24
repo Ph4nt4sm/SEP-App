@@ -34,10 +34,10 @@
         android:id="@+id/RegisterBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="103dp"
+        android:layout_marginStart="148dp"
         android:layout_marginTop="16dp"
         android:onClick="createAccount"
-        android:text="Go To Step 2 out of 2"
+        android:text="Register"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/registerPassword" />
 
