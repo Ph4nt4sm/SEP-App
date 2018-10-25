@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "529424424985",
+    "firebase_url": "https://sep-app-446a9.firebaseio.com",
+    "project_id": "sep-app-446a9",
+    "storage_bucket": "sep-app-446a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:529424424985:android:2e91dc9db1a97c9b",
+        "android_client_info": {
+          "package_name": "sep.sep_project"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "529424424985-9s7t8h2jao5dfd0r1c1i66u84bet57st.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOxHS_iI0bgOzNpwWCEUM-4BGk95JxFVo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
