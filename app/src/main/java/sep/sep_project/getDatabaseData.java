@@ -11,6 +11,7 @@ import com.google.gson.*;
 
 public class getDatabaseData{
     public int id;
+    public String name;
     public int postcode;
     public String address;
     public String state;
