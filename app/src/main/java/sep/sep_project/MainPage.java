@@ -7,7 +7,7 @@ import android.view.View;
 import android.widget.TextView;
 
 
-public class MainPage extends AppCompatActivity {
+public class  MainPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,10 @@ public class MainPage extends AppCompatActivity {
     }
     public void GoTo (View v){
         Intent intent = new Intent( this, HomePage.class);
+        startActivity(intent);
+    }
+    public void restaurants (View v) {
+        Intent intent = new Intent(this, restaurants.class);
         startActivity(intent);
     }
 
