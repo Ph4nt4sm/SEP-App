@@ -22,7 +22,7 @@ public class MainPage extends AppCompatActivity {
 
     }
     public void GoTo (View v){
-        Intent intent = new Intent( this, LoginPage.class);
+        Intent intent = new Intent( this, HomePage.class);
         startActivity(intent);
     }
 
