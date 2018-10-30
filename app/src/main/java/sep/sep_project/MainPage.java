@@ -18,7 +18,7 @@ public class  MainPage extends AppCompatActivity {
 
 
         final TextView textViewToChange = (TextView) findViewById(R.id.testText);
-        new GetUrlContentTask(textViewToChange).execute("http://124.171.219.142/index.php?get_restaraunts");
+        new GetUrlContentTask(textViewToChange).execute("http://sisyphus.sytes.net/index.php?get_restaraunts");
 
     }
     public void GoTo (View v){
